@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/images.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header class="top-head img-fluid float-sm-start">
+
+        <!--background stars -->
+        <div class="bg-animation">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
+        </div>
+        <!--background stars end-->
+        <!--background audio -->
+        <div>
+            <audio id="myAudio" loop src="../audio/background-sound.mp3">musica</audio>
+            <script>
+                var x = document.getElementById("myAudio");
+
+                function playAudio() {
+                    x.play();
+                }
+
+                function pauseAudio() {
+                    x.pause();
+                } 
+            </script>
+        </div>
+        <!--background audio end-->
+
+        <!-- Logo mas barra de navegacion! -->
+        <div class="barra-header ">
+
+            <nav class="navbar navbar-expand-xl navbar-dark bg-primary bg-dark bg-gradient bg-opacity-10">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/images.webp" alt="" width="50px" height="50px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="" role="button"><i class="fa fa-bars" aria-hidden="true"
+                                style="color:#e6e6ff"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/libros-mas-vendidos.html">Mas Buscados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/sucursales.html">Sucursales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/solicitar-libro.html">Solicitar Libro</a>
+                            </li>
+                            <li class="botones-header"> <button class="btn btn-outline-light" onclick="playAudio()"
+                                    type="button">Reproducir</button>
+                                <button class="btn btn-outline-light" onclick="pauseAudio()"
+                                    type="button">Pausar</button>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-end buscador-header">
+                            <ul>
+                                <li class="nav-item">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2 input-header-mio" type="search" placeholder="Buscar Libro"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success boton-header" type="submit">Enviar</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <br>
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <h1 class="h1 subtitulo">Contactanos!</h1>
+        <h2 class="fst-italic text-center">Para recibir noticias, enviar un feedback y demas intereses</h2>
+        <hr>
+
+        <div class="container-sm bg-primary bg-dark bg-gradient bg-opacity-25 w-50 p-4 contacto-container">
+            <section class="d-grid justify-content-center">
+                <form>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form5Example1" class="form-control" />
+                        <label class="form-label nombre" for="form5Example1">Nombre</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label email" for="form5Example2">Email</label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4 w-100">
+                        <input class="form-check-input me-2 p-1" type="checkbox" value="" id="form5Example3" checked />
+                        <label class="form-check-label" for="form5Example5">
+                            Deseo enterarme de novedades de "Mundolibros"
+                        </label>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4" id="boton">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer class="text-center text-white bg-opacity-50 bg-dark">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-facebook fa-lg"></i>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.twitter.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter fa-lg"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.google.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-google fa-lg"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram fa-lg"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin fa-lg"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/AguTra/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-github fa-lg"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:<p class="text-dark">Traico, Inc</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

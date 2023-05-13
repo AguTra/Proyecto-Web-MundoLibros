@@ -1,0 +1,242 @@
+ body {
+     min-height: 100vh;
+     width: 100;
+     margin: 0;
+     display: grid;
+     grid-template-rows: auto 1fr auto;
+     background-color: black;
+     vertical-align: top;
+     color: white;
+     position: relative;
+
+     /*h1 {
+        color: gray !important;
+     }*/
+
+     .subtitulo {
+         text-align: center;
+         width: auto;
+         margin-top: 30px;
+         font-family: 'Libre Baskerville', serif;
+     }
+
+     .container {
+         display: grid;
+
+         .Libros {
+             height: 500px;
+             grid-row: 1 / 3;
+             padding: 2%;
+         }
+
+         .test {
+             margin-top: 30px;
+         }
+     }
+
+     /*.article {
+         display: grid;
+         grid-template-rows: 2fr;
+         grid-template-columns: 1fr;
+         grid-auto-flow: column;
+         align-items: auto;
+     }*/
+
+     .Info {
+         grid-row: 1 / 3;
+         padding: 2%;
+         grid-row-start: 1;
+         grid-row-end: 3;
+     }
+
+     p {
+         text-align: center;
+         /*width: 80%;*/
+         font-size: x-large;
+         /*margin-top: 10%;*/
+
+     }
+
+     .texto {
+         font-family: 'Libre Baskerville', serif;
+         font-size: xx-large;
+         /*text-align: center;*/
+         margin: 2% 10px 10px 10px;
+         text-align: center;
+         width: auto;
+         height: auto;
+         grid-column: 3;
+         grid-row: 1;
+     }
+
+     .texto2 {
+         font-family: 'Libre Baskerville', serif;
+         text-align: center;
+         font-size: large;
+         font-style: italic;
+         margin: 7% 10px 10px 10px;
+         text-align: center;
+         width: auto;
+         grid-column: 3;
+         grid-row: 1;
+     }
+
+     /* contacto */
+     #boton {
+         background-color: #c49952;
+         color: black;
+         border: none;
+         transition-duration: 0.4s;
+     }
+
+     #boton:hover {
+         background-color: white;
+         color: #c49952
+     }
+
+     #form5Example3 {
+         background-color: #c49952;
+         border: none;
+     }
+
+
+
+     .email {
+         background-color: #c49952;
+         margin-top: 10px;
+         color: black;
+         border-radius: 10%;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+
+     .nombre {
+         background-color: #c49952;
+         margin-top: 10px;
+         color: black;
+         border-radius: 10%;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+
+     /*solicitud de libro*/
+
+     .solicitud-libro {
+         width: 75vw;
+         align-items: center;
+     }
+
+     #floatingInput {
+         background-color: black;
+         color: #c49952;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-style: italic;
+         font-weight: bold;
+     }
+
+     #floatingtexto {
+         background-color: black;
+         color: #c49952;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-style: italic;
+         font-weight: bold;
+     }
+
+     #floatingTextarea {
+         background-color: black;
+         color: #c49952;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-style: italic;
+         font-weight: bold;
+     }
+
+     #label {
+         color: #c49952;
+         border: transparent;
+     }
+
+     #label2 {
+         color: #c49952;
+         border: transparent;
+     }
+
+     #label3 {
+         color: #c49952;
+         border: transparent;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+     /***************************************************************************/
+
+
+     .pruebas {
+         background-color: transparent;
+         border: hidden;
+         background-size: cover;
+
+     }
+
+     .Libros {
+         position: relative;
+         animation-name: example;
+         animation-duration: 4s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+         animation-play-state: inherit;
+     }
+
+
+
+     @keyframes example {
+         0% {
+             left: 0px;
+             top: 0px;
+         }
+
+         25% {
+             left: -65px;
+             top: 0px;
+         }
+
+         50% {
+             left: 0px;
+             top: 0px;
+         }
+
+         75% {
+             left: -65px;
+             top: 0px;
+         }
+
+         100% {
+             left: 0px;
+             top: 0px;
+         }
+
+     }
+
+     .container__arreglos {
+         width: fit-content;
+     }
+
+     .grid__test {
+         display: grid;
+     }
+
+     #subtitulo-hover {
+         text-decoration: none;
+         color: #c49952;
+     }
+
+     #subtitulo-hover:hover {
+         text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+     }
+ }

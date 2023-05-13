@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/images.webp">
+    <title>Mas vendidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="w-100">
+
+    <header class="top-head img-fluid float-sm-start">
+
+        <!--background stars -->
+        <div class="bg-animation">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
+        </div>
+        <!--background stars end-->
+        <!--background audio -->
+        <div>
+            <audio id="myAudio" loop src="../audio/background-sound.mp3">musica</audio>
+            <script>
+                var x = document.getElementById("myAudio");
+
+                function playAudio() {
+                    x.play();
+                }
+
+                function pauseAudio() {
+                    x.pause();
+                } 
+            </script>
+        </div>
+        <!--background audio end-->
+
+        <!-- Logo mas barra de navegacion! -->
+        <div class="barra-header">
+
+            <nav class="navbar navbar-expand-xl navbar-dark bg-primary bg-dark bg-gradient bg-opacity-10">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/images.webp" alt="" width="50px" height="50px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="" role="button"><i class="fa fa-bars" aria-hidden="true"
+                                style="color:#e6e6ff"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/libros-mas-vendidos.html">Mas Buscados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/sucursales.html">Sucursales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-header" aria-current="page"
+                                    href="../secciones/solicitar-libro.html">Solicitar Libro</a>
+                            </li>
+                            <li class="botones-header"> <button class="btn btn-outline-light" onclick="playAudio()"
+                                    type="button">Reproducir</button>
+                                <button class="btn btn-outline-light" onclick="pauseAudio()"
+                                    type="button">Pausar</button>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-end buscador-header">
+                            <ul>
+                                <li class="nav-item">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2 input-header-mio" type="search"
+                                            placeholder="Buscar Libro" aria-label="Search">
+                                        <button class="btn btn-outline-success boton-header"
+                                            type="submit">Enviar</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <br>
+        </div>
+        <div class="scrips">
+            <script>
+                $(document).ready(function () {
+                    $("#pruebas").click(function () {
+                        $("#Info").collapse('toggle');
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#pruebas2").click(function () {
+                        $("#Info2").collapse('toggle');
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#pruebas3").click(function () {
+                        $("#Info3").collapse('toggle');
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#pruebas4").click(function () {
+                        $("#Info4").collapse('toggle');
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#pruebas5").click(function () {
+                        $("#Info5").collapse('toggle');
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $("#pruebas6").click(function () {
+                        $("#Info6").collapse('toggle');
+                    });
+                });
+            </script>
+        </div>
+    </header>
+    <main>
+        <h1 class="h1 subtitulo">Mas solicitados de la plataforma</h1>
+        <hr>
+        <div>
+            <ol class="grid__test">
+                <li class="container">
+                    <div class="container container__arreglos">
+                        <button type="button" id="pruebas" class="pruebas Libros m-0 p-0" data-toggle="collapse">
+                            <img class="Libros p-0 m-0"
+                                src="https://i.pinimg.com/564x/9b/56/76/9b5676bac6b78acca23334f034ee710c--country-unique.jpg"
+                                alt="HP-Saga"></img>
+                        </button>
+                        <div class="Info collapse" id="Info">
+                            <a id="subtitulo-hover"
+                                href="https://www.mercadolibre.com.ar/harry-potter-coleccion-saga-completa-nueva-edicion-estuche/p/MLA19865102?pdp_filters=item_id:MLA1250558753#is_advertising=true&searchVariation=MLA19865102&position=1&search_layout=stack&type=pad&tracking_id=e5f224ab-02c1-4333-9ddd-b5074d52e2b1&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=MjNiYmZlNWUtZWQyZC00NDg2LThiYjctZjY3NWJjYzM2Y2U0">
+                                <h2 class="texto">Harry Potter - Saga</h2>
+                            </a>
+                            <h3 class="texto2">J. K. Rowling</h3>
+
+                            <p>Harry Potter es una serie de novelas fantásticas escrita por la autora británica J. K.
+                                Rowling, en la que se describen las aventuras del joven aprendiz de magia y hechicería
+                                Harry Potter y sus amigos Hermione Granger y Ron Weasley, durante los años que pasan en
+                                el Colegio Hogwarts de Magia y Hechicería. El argumento se centra en la lucha entre
+                                Harry Potter y el malvado mago lord Voldemort, quien asesinó a los padres de Harry en su
+                                afán de conquistar el mundo mágico.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <hr>
+                <li class="container">
+                    <div class="container container__arreglos">
+                        <button type="button" id="pruebas2" class="pruebas Libros m-0 p-0" data-toggle="collapse">
+                            <img class="Libros p-0 m-0"
+                                src="https://http2.mlstatic.com/D_NQ_NP_896990-MLA43399684571_092020-O.webp"
+                                alt="historia-2-ciudades"></img>
+                        </button>
+                        <div class="Info collapse" id="Info2">
+                            <a id="subtitulo-hover"
+                                href="https://www.casadellibro.com/libro-historia-de-dos-ciudades/9788413623443/12276669">
+                                <h2 class="texto">Historia de 2 Ciudades</h2>
+                            </a>
+                            <h3 class="texto2">CHARLES DICKENS</h3>
+
+                            <p>El títuloHistoria de dos ciudades hace referencia a París y Londres en los años sacudidos
+                                por los dramáticos acontecimientos que suscitó la Revolución Francesa. Tales son los
+                                polos de esta novela llena de acción y aventuras que salta de una orilla a otra del
+                                canal de la Mancha y que ofrece un vivo retrato del ambiente y los sucesos del París
+                                revolucionario dominado por la sombra de la guillotina.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <hr>
+                <li class="container">
+                    <div class="container container__arreglos">
+                        <button type="button" id="pruebas3" class="pruebas Libros m-0 p-0" data-toggle="collapse">
+                            <img class="Libros p-0 m-0"
+                                src="https://infoliteraria.com/wp-content/uploads/2022/02/nuevasedicionesESDLA-1024x1024.jpeg.webp"
+                                alt="Saga LOTR"></img>
+                        </button>
+                        <div class="Info collapse" id="Info3">
+                            <a id="subtitulo-hover"
+                                href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-ne-ilustrado-por-alan-lee/9788445011119/13022033">
+                                <h2 class="texto">El señor de los Anillos - Trillogia</h2>
+                            </a>
+                            <h3 class="texto2">J.R.R. TOLKIEN</h3>
+                            <p>Reedición recopilatoria de la saga.
+
+                                Los Anillos de Poder fueron forjados en antiguos tiempos por los herreros Elfos, y
+                                Sauron, el Señor Oscuro, forjó el Anillo Único. Pero en una ocasión se lo quitaron, y
+                                aunque lo buscó por toda la Tierra Media nunca pudo encontrarlo. Al cabo de muchos años
+                                fue a caer casualmente en manos del hobbit Bilbo Bolsón.
+                                Desde la Torre Oscura de Mordor, el poder de Sauron se extendió alrededor. Llegó a
+                                reunir todos los Grandes Anillos, pero continuaba buscando el Anillo Único, que
+                                completaría el dominio de Mordor.
+                                El Señor de los Anillos cuenta la gran misión cumplida por Frodo y sus amigos: Gandalf
+                                el Mago, Merry, Pippiny Sam, Gimli el Enano, Legolas el Elfo, y un hombre extraño y
+                                misterioso llamado Trancos.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <hr>
+                <li class="container">
+                    <div class="container container__arreglos">
+                        <button type="button" id="pruebas4" class="pruebas Libros m-0 p-0" data-toggle="collapse">
+                            <img class="Libros p-0 m-0"
+                                src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/631789.jpg"
+                                alt="el-principito"></img>
+                        </button>
+                        <div class="Info collapse" id="Info4">
+                            <a id="subtitulo-hover"
+                                href="https://www.tematika.com/el-el-principito-tapa-acolchada-9789877979015.html">
+                                <h2 class="texto">El Principito</h2>
+                            </a>
+                            <h3 class="texto2">Antoine de Saint-Exupéry</h3>
+
+                            <p>El principito es un cuento poético que viene acompañado de ilustraciones hechas con
+                                acuarelas por el mismo Saint-Exupéry. En él, un piloto se encuentra perdido en el
+                                desierto del Sahara después de que su avión sufriera una avería, pero para su sorpresa,
+                                es allí donde conoce a un pequeño príncipe proveniente de otro planeta. La historia
+                                tiene una temática filosófica, donde se incluyen críticas sociales dirigidas a la
+                                «extrañeza» con la que los adultos ven las cosas. Estas críticas a las cosas
+                                «importantes» y al mundo de los adultos van apareciendo en el libro a lo largo de la
+                                narración.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <hr>
+                <li class="container">
+                    <div class="container container__arreglos">
+                        <button type="button" id="pruebas5" class="pruebas Libros m-0 p-0" data-toggle="collapse">
+                            <img class="Libros p-0 m-0"
+                                src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/675239.jpg"
+                                alt="diez-negritos"></img>
+                        </button>
+                        <div class="Info collapse" id="Info5">
+                            <a id="subtitulo-hover"
+                                href="https://www.mercadolibre.com.ar/diez-negritos-y-no-quedo-ninguno-christie-booket-libro/p/MLA21979181?pdp_filters=category:MLA412445#searchVariation=MLA21979181&position=1&search_layout=stack&type=product&tracking_id=3e96b3ba-3fdd-44dd-af3f-917c84578ad5">
+                                <h2 id="subtitulo-hover" class="texto">Diez Negritos</h2>
+                            </a>
+                            <h3 class="texto2">Agatha Christie</h3>
+
+                            <p>Ocho personas —el juez Lawrence Wargrave, la institutriz Vera Claythorne, el aventurero
+                                Philip Lombard, el general retirado John MacArthur, la solterona Emily Brent, el playboy
+                                Anthony Marston, el doctor Edward Armstrong y el detective privado y expolicía William
+                                Blore— reciben una invitación para pasar unas vacaciones en la isla del Negro (inspirada
+                                en la isla Burgh).8
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <hr>
+                <li class="container">
+                    <div class="container container__arreglos">
+                        <button type="button" id="pruebas6" class="pruebas Libros m-0 p-0" data-toggle="collapse">
+                            <img class="Libros p-0 m-0"
+                                src="data:image/jpeg;base64,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"
+                                alt="Alicia-pais-maravillas"></img>
+                        </button>
+                        <div class="Info collapse" id="Info6">
+                            <a id="subtitulo-hover"
+                                href="https://www.tematika.com/alicia-en-el-pais-de-las-maravillas-9789876133227.html">
+                                <h2 class="texto">ALICIA EN EL PAIS DE LAS MARAVILLAS </h2>
+                            </a>
+                            <h3 class="texto2">CARROLL, LEWIS</h3>
+
+                            <p>Alicia en el país de las maravillas es; sin dudas; una de las obras más leídas en la
+                                historia de la
+                                literatura universal. En los más de ciento cincuenta años que pasaron desde su primera
+                                edición; el texto del inglés Lewis Carroll ha sido traducido a unas ciento ochenta
+                                lenguas a lo largo y ancho del mundo y ha generado una incalculable cantidad de
+                                versiones.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <hr>
+            </ol>
+
+        </div>
+
+    </main>
+
+    <footer class="text-center text-white bg-opacity-50 bg-dark">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-facebook fa-lg"></i>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.twitter.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter fa-lg"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.google.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-google fa-lg"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram fa-lg"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin fa-lg"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/AguTra/"
+                        role="button" data-mdb-ripple-color="dark"><i class="bi bi-github fa-lg"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:<p class="text-dark">Traico, Inc</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
